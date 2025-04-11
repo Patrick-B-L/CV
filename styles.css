@@ -1,303 +1,264 @@
-/* Resets standard margin and padding for all elements and ensures consistent box-sizing behavior */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Styles the main body with a light blue background and centers the content both horizontally and vertically */
 body {
-  background: lightblue; 
-  display: flex; /* Uses flexbox layout for alignment */
-  justify-content: center; /* Horizontally centers the content */
-  align-items: center; /* Vertically centers the content */
-  min-height: 100vh; /* Ensures the height covers the entire viewport */
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Styles the container for the CV layout, adding structure and visual appeal */
 .container {
-  position: relative; /* Allows for absolutely positioned child elements */
-  width: 100%; /* Makes the container responsive */
-  max-width: 1000px; /* Limits the container width on larger screens */
-  min-height: 1000px; /* Sets a minimum height to accommodate content */
-  background: #fff; /* Adds a clean white background */
-  margin: 50px; /* Creates space around the container */
-  display: grid; /* Uses grid layout for structured content */
-  grid-template-columns: 1fr 2fr; /* Divides the layout into left and right sections */
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
-  border-radius: 10px; /* Smooths the corners for a modern look */
-  overflow: hidden; /* Ensures content stays within the container bounds */
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-/* Left section styling with a dark background for contrast */
 .container .left_Side {
-  position: relative; /* Allows flexible positioning for child elements */
-  background: #003147; /* Dark blue background to differentiate this section */
-  padding: 40px; /* Adds spacing inside the section */
+  position: relative;
+  background: #003147;
+  padding: 40px;
 }
 
-/* Profile section within the left side, aligning content centrally */
 .profileText {
-  position: relative; /* Positions content in relation to this block */
-  display: flex; /* Stacks elements vertically */
-  flex-direction: column; /* Ensures vertical alignment */
-  align-items: center; /* Centers content horizontally */
-  padding-bottom: 20px; /* Adds spacing below the profile details */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Adds a subtle divider */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Styles the circular profile image container */
 .profileText .imgBx {
-  position: relative; /* Prepares the container for inner positioning */
-  width: 200px; /* Sets a fixed width */
-  height: 200px; /* Ensures the container remains a square */
-  border-radius: 50%; /* Makes the container circular */
-  overflow: hidden; /* Prevents image overflow */
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-/* Ensures the profile image covers the container proportionally */
 .profileText .imgBx img {
-  position: absolute; /* Positions the image within the container */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Fills the container width */
-  height: 100%; /* Fills the container height */
-  object-fit: cover; /* Ensures the image maintains proportions */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Styles the profile name and title for visibility */
 .profileText h2 {
-  color: #fff; /* White color for text contrast against dark background */
-  font-size: 1.5em; /* Sets a readable font size */
-  margin-top: 20px; /* Adds space above the text */
-  text-transform: uppercase; /* Ensures consistency in style */
-  text-align: center; /* Centers the text */
-  font-weight: 600; /* Adds emphasis */
-  line-height: 1.4em; /* Improves readability */
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
 }
 
-/* Subtext (title or role) styling */
 .profileText h2 span {
-  font-size: 0.8em; /* Smaller font for differentiation */
-  font-weight: 300; /* Lighter font for a subtle look */
+  font-size: 0.8em;
+  font-weight: 300;
 }
 
-/* Section for contact information with padding */
 .contactInfo {
-  padding-top: 40px; /* Adds space above the section */
+  padding-top: 40px;
 }
 
-/* Titles within the contact info section for emphasis */
 .title {
-  color: #fff; /* White text for readability */
-  text-transform: uppercase; /* Ensures uniformity across headings */
-  font-weight: 600; /* Makes titles stand out */
-  letter-spacing: 1px; /* Adds spacing for clarity */
-  margin-bottom: 20px; /* Creates separation from the content below */
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
-/* List container styling within the contact section */
 .contactInfo ul {
-  position: relative; /* Prepares the list for potential customization */
+  position: relative;
 }
 
-/* List item styling for better readability */
 .contactInfo ul li {
-  position: relative; /* Flexible positioning for child elements */
-  list-style: none; /* Removes default bullet points */
-  margin: 10px 0; /* Adds spacing between items */
-  cursor: pointer; /* Indicates interactivity */
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
 }
 
-/* Icon styling for visual hierarchy in the contact info section */
 .contactInfo ul li .icon {
-  display: inline-block; /* Aligns icons with text */
-  width: 30px; /* Sets a consistent icon size */
-  font-size: 18px; /* Ensures icons are clear but not overwhelming */
-  color: #03a9f4; /* Highlights icons with a theme color */
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
 }
 
-/* Text styling within the contact info section */
 .contactInfo ul li span {
-  color: #fff; /* Matches the left-side theme */
-  font-weight: 300; /* Maintains a light and clean appearance */
+  color: #fff;
+  font-weight: 300;
 }
 
-/* Education section with spacing and specific stylings */
 .contactInfo.education {
-  margin-bottom: 15px; /* Adds spacing below the section */
+  margin-bottom: 15px;
 }
 
-/* Styles for years within the education section */
 .contactInfo.education h5 {
-  color: #03a9f4; /* Highlights years with a theme color */
-  font-weight: 500; /* Makes them noticeable without overpowering */
+  color: #03a9f4;
+  font-weight: 500;
 }
 
-/* Adds differentiation for subsection headings */
 .contactInfo.education h4:nth-child(2) {
-  color: #fff; /* Maintains readability on dark background */
-  font-weight: 500; /* Balances emphasis */
+  color: #fff;
+  font-weight: 500;
 }
 
-/* Language proficiency bar container */
+.contactInfo.education h4 {
+  color: #fff;
+  font-weight: 300;
+}
+
 .contactInfo.language .percent {
-  position: relative; /* Positions the bar in its container */
-  width: 100%; /* Makes the bar span the container width */
-  height: 6px; /* Sets a fixed height for the bar */
-  background: #081921; /* Dark background for contrast */
-  display: block; 
-  margin-top: 5px; /* Adds spacing above the bar */
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
 }
 
-/* Language proficiency bar fill */
 .contactInfo.language .percent div {
-  position: absolute; /* Positions the fill */
+  position: absolute;
   top: 0;
   left: 0;
-  height: 100%; /* Matches the height of the bar */
-  background: #03a9f4; /* Highlights the fill */
+  height: 100%;
+  background: #03a9f4;
 }
 
-/* Right section for content with white background */
 .container .right_Side {
-  position: relative; /* Prepares for child element positioning */
-  background: #fff; /* Matches the overall container theme */
-  padding: 40px; /* Creates internal spacing */
+  position: relative;
+  background: #fff;
+  padding: 40px;
 }
 
-/* Thematic styles for titles, skills, and interests... */
-
-/* Styles the general layout for "about" sections in the right side */
 .about {
-  margin-bottom: 50px; /* Adds spacing below each section for clarity */
+  margin-bottom: 50px;
 }
 
-/* Removes unnecessary margin for the last "about" section */
 .about:last-child {
-  margin-bottom: 0; /* Ensures no extra space below the last section */
+  margin-bottom: 0;
 }
 
-/* Styles the headings within the right-side sections */
 .title2 {
-  color: #003147; /* Uses the main theme color for consistency */
-  text-transform: uppercase; /* Makes the titles bold and clear */
-  letter-spacing: 1px; /* Adds spacing between letters for readability */
-  margin-bottom: 10px; /* Creates space below the title */
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-/* Paragraph styling within the "about" section for readability */
 .about p {
-  color: #333; /* Dark gray text for easy reading */
+  color: #333;
 }
 
-/* Defines the layout of experience boxes with roles and dates */
 .about .box {
-  display: flex; /* Arranges content in a row */
-  flex-direction: row; /* Ensures elements are horizontally aligned */
-  margin: 20px 0; /* Adds spacing between experience items */
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
 }
 
-/* Sets a fixed width for the year and company information */
 .about .box .year_company {
-  min-width: 150px; /* Ensures enough space for content */
+  min-width: 150px;
 }
 
-/* Styles the years in the "year_company" block */
 .about .box .year_company h5 {
-  text-transform: uppercase; /* Matches the styling of other titles */
-  color: #848c90; /* A neutral color for less emphasis */
-  font-weight: 600; /* Makes the text stand out slightly */
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
 }
 
-/* Job title styling for better hierarchy and readability */
 .about .box .text h4 {
-  color: #2a7da2; /* Highlighted with a softer tone */
-  font-size: 16px; /* Readable font size for headings */
+  color: #2a7da2;
+  font-size: 16px;
 }
 
-/* Layout for the skills section using a grid system */
 .skills .box {
-  position: relative; /* Allows for flexible positioning */
-  width: 100%; /* Occupies full available width */
-  display: grid; /* Uses a grid to structure the content */
-  grid-template-columns: 150px 1fr; /* Allocates space for labels and bars */
-  justify-content: center; /* Centers content horizontally */
-  align-content: center; /* Centers content vertically */
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-content: center;
 }
 
-/* Styles the skill labels */
 .skills .box h4 {
-  text-transform: uppercase; /* Matches other headings */
-  color: #848c90; /* Neutral color to reduce visual weight */
-  font-weight: 500; /* Balances emphasis and readability */
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 500;
 }
 
-/* Container for skill progress bars */
 .skills .box .percent {
-  position: relative; /* Positions the progress bar */
-  width: 100%; /* Fills the available width */
-  height: 10px; /* Sets the height of the progress bar */
-  background: #f0f0f0; /* Light gray background for contrast */
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
 }
 
-/* The filled portion of the skill progress bar */
 .skills .box .percent div {
-  position: absolute; /* Ensures the fill stays within the bar */
+  position: absolute;
   top: 0;
   left: 0;
-  height: 100%; /* Matches the full height of the bar */
-  background: #03a9f4; /* Uses the theme color for consistency */
+  height: 100%;
+  background: #03a9f4;
 }
 
-/* Styles for the interests section using a grid layout */
 .interests ul {
-  display: grid; /* Uses a grid layout to structure the items */
-  grid-template-columns: repeat(3, 1fr); /* Splits the grid into three columns */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/* Individual items within the interests section */
 .interests ul li {
-  list-style: none; /* Removes default list styling */
-  color: #333; /* Sets a dark gray text color */
-  font-weight: 500; /* Slightly bold text for visibility */
-  margin: 10px 0; /* Adds spacing between items */
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
 }
 
-/* Icon styling for the interests items */
 .interests ul li .fa {
-  color: #03a9f4; /* Highlights icons with a theme color */
-  font-size: 18px; /* Sets an appropriate size for visibility */
-  margin-right: 10px; /* Adds spacing between icons and text */
+  color: #03a9f4;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
-/* Media query for screens smaller than 1000px */
 @media (max-width: 1000px) {
   .container {
-    margin: 10px; /* Reduces external margins for smaller screens */
-    grid-template-columns: repeat(1, 1fr); /* Stacks sections vertically */
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
   }
-
   .interests ul {
-    grid-template-columns: repeat(2, 1fr); /* Adjusts grid layout for two columns */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
   .about .box {
-    flex-direction: column; /* Stacks experience content vertically */
+    flex-direction: column;
   }
-
   .about .box .year_company {
-    margin-bottom: 5px; /* Adds spacing between years and text */
+    margin-bottom: 5px;
   }
-
   .interests ul {
-    grid-template-columns: repeat(1, 1fr); /* Displays one item per row */
+    grid-template-columns: repeat(1, 1fr);
   }
-
   .skills .box {
-    grid-template-columns: 1fr; /* Adjusts skill layout for small screens */
+    grid-template-columns: 1, 1fr;
   }
 }
