@@ -1,9 +1,11 @@
+/* Resets margin and padding for all elements and ensures consistent box-sizing */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Styles the body to center the content and set a light blue background */
 body {
   background: lightblue;
   display: flex;
@@ -12,6 +14,7 @@ body {
   min-height: 100vh;
 }
 
+/* Main container for the CV layout with a grid structure */
 .container {
   position: relative;
   width: 100%;
@@ -20,144 +23,166 @@ body {
   background: #fff;
   margin: 50px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
+  grid-template-columns: 1fr 2fr; /* Divides the layout into two sections */
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  border-radius: 10px; /* Rounds the corners of the container */
+  overflow: hidden; /* Ensures content doesn't overflow the container */
 }
 
+/* Styles for the left section of the CV */
 .container .left_Side {
   position: relative;
-  background: #003147;
+  background: #003147; /* Dark blue background for contrast */
   padding: 40px;
 }
 
+/* Styles for the profile section, including image and name */
 .profileText {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Adds a subtle divider */
 }
 
+/* Circular container for the profile picture */
 .profileText .imgBx {
   position: relative;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures the image fits within the circle */
 }
 
+/* Ensures the profile picture fills the circular container */
 .profileText .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Maintains aspect ratio while filling the container */
 }
 
+/* Styles for the name and profession text */
 .profileText h2 {
   color: #fff;
   font-size: 1.5em;
   margin-top: 20px;
-  text-transform: uppercase;
+  text-transform: uppercase; /* Converts text to uppercase */
   text-align: center;
   font-weight: 600;
   line-height: 1.4em;
 }
 
+/* Styles for the profession text below the name */
 .profileText h2 span {
   font-size: 0.8em;
   font-weight: 300;
 }
 
+/* Contact information section */
 .contactInfo {
   padding-top: 40px;
 }
 
+/* Title styling for sections like "Contact Info" and "Education" */
 .title {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 1px; /* Adds spacing between letters */
   margin-bottom: 20px;
 }
 
+/* Styles for the list of contact details */
 .contactInfo ul {
   position: relative;
 }
 
+/* Individual list items for contact details */
 .contactInfo ul li {
   position: relative;
-  list-style: none;
+  list-style: none; /* Removes default bullet points */
   margin: 10px 0;
-  cursor: pointer;
+  cursor: pointer; /* Changes cursor to pointer for interactivity */
 }
 
+/* Icon styling for contact details */
 .contactInfo ul li .icon {
   display: inline-block;
   width: 30px;
   font-size: 18px;
-  color: #03a9f4;
+  color: #03a9f4; /* Light blue color for icons */
 }
 
+/* Text styling for contact details */
 .contactInfo ul li span {
   color: #fff;
   font-weight: 300;
 }
 
+/* Education section styling */
 .contactInfo.education {
   margin-bottom: 15px;
 }
 
+/* Year text in the education section */
 .contactInfo.education h5 {
   color: #03a9f4;
   font-weight: 500;
 }
 
+/* Institution name styling in the education section */
 .contactInfo.education h4:nth-child(2) {
   color: #fff;
   font-weight: 500;
 }
 
+/* General text styling in the education section */
 .contactInfo.education h4 {
   color: #fff;
   font-weight: 300;
 }
 
+/* Language proficiency bar container */
 .contactInfo.language .percent {
   position: relative;
   width: 100%;
   height: 6px;
-  background: #081921;
+  background: #081921; /* Dark background for contrast */
   display: block;
   margin-top: 5px;
 }
 
+/* Filled portion of the language proficiency bar */
 .contactInfo.language .percent div {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  background: #03a9f4;
+  background: #03a9f4; /* Light blue to indicate proficiency */
 }
 
+/* Right section of the CV */
 .container .right_Side {
   position: relative;
   background: #fff;
   padding: 40px;
 }
 
+/* General styling for sections like "Profile", "Experience", etc. */
 .about {
   margin-bottom: 50px;
 }
 
+/* Removes bottom margin for the last section */
 .about:last-child {
   margin-bottom: 0;
 }
 
+/* Title styling for sections in the right side */
 .title2 {
   color: #003147;
   text-transform: uppercase;
@@ -165,100 +190,114 @@ body {
   margin-bottom: 10px;
 }
 
+/* Paragraph text styling in the right side */
 .about p {
   color: #333;
 }
 
+/* Flexbox layout for experience details */
 .about .box {
   display: flex;
   flex-direction: row;
   margin: 20px 0;
 }
 
+/* Styling for the year and company name in experience details */
 .about .box .year_company {
   min-width: 150px;
 }
 
+/* Year text styling in experience details */
 .about .box .year_company h5 {
   text-transform: uppercase;
   color: #848c90;
   font-weight: 600;
 }
 
+/* Job title styling in experience details */
 .about .box .text h4 {
   color: #2a7da2;
   font-size: 16px;
 }
 
+/* Skills section layout */
 .skills .box {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 150px 1fr; /* Two-column layout for skill name and bar */
   justify-content: center;
   align-content: center;
 }
 
+/* Skill name styling */
 .skills .box h4 {
   text-transform: uppercase;
   color: #848c90;
   font-weight: 500;
 }
 
+/* Skill proficiency bar container */
 .skills .box .percent {
   position: relative;
   width: 100%;
   height: 10px;
-  background: #f0f0f0;
+  background: #f0f0f0; /* Light gray background for the bar */
 }
 
+/* Filled portion of the skill proficiency bar */
 .skills .box .percent div {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  background: #03a9f4;
+  background: #03a9f4; /* Light blue to indicate proficiency */
 }
 
+/* Interests section layout */
 .interests ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Three-column layout for icons */
 }
 
+/* Individual interest items */
 .interests ul li {
-  list-style: none;
+  list-style: none; /* Removes default bullet points */
   color: #333;
   font-weight: 500;
   margin: 10px 0;
 }
 
+/* Icon styling for interests */
 .interests ul li .fa {
-  color: #03a9f4;
+  color: #03a9f4; /* Light blue color for icons */
   font-size: 18px;
   margin-right: 10px;
 }
 
+/* Responsive design for screens smaller than 1000px */
 @media (max-width: 1000px) {
   .container {
     margin: 10px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* Stacks sections vertically */
   }
   .interests ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout for interests */
   }
 }
 
+/* Responsive design for screens smaller than 600px */
 @media (max-width: 600px) {
   .about .box {
-    flex-direction: column;
+    flex-direction: column; /* Stacks experience details vertically */
   }
   .about .box .year_company {
     margin-bottom: 5px;
   }
   .interests ul {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* Single-column layout for interests */
   }
   .skills .box {
-    grid-template-columns: 1, 1fr;
+    grid-template-columns: 1, 1fr; /* Adjusts skill layout for small screens */
   }
 }
