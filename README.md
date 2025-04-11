@@ -37,20 +37,9 @@ The webpage is designed to adapt to different screen sizes:
 - For screens smaller than 1000px, the layout adjusts to stack sections vertically.
 - For screens smaller than 600px, additional adjustments are made, such as stacking experience details and reducing the number of columns in the interests section.
 
-## Screenshots
-
-### Desktop View
-![Desktop View](path/to/desktop-screenshot.png)
-
-### Mobile View
-![Mobile View](path/to/mobile-screenshot.png)
-
 ## Future Improvements
 
 - Add animations for smoother transitions between sections.
 - Include a print-friendly version of the CV.
 - Add support for dark mode.
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
