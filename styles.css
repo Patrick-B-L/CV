@@ -30,7 +30,7 @@ body {
   position: relative;
   background: #003147;
   padding: 40px;
-  }
+}
 
 .profileText {
   position: relative;
@@ -57,9 +57,10 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 .profileText h2 {
   color: #fff;
-  font-size: 1,5em;
+  font-size: 1.5em;
   margin-top: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -73,7 +74,7 @@ body {
 }
 
 .contactInfo {
-  padding-top: 40px
+  padding-top: 40px;
 }
 
 .title {
@@ -85,7 +86,7 @@ body {
 }
 
 .contactInfo ul {
-position: relative;
+  position: relative;
 }
 
 .contactInfo ul li {
@@ -96,7 +97,6 @@ position: relative;
 }
 
 .contactInfo ul li .icon {
-
   display: inline-block;
   width: 30px;
   font-size: 18px;
@@ -106,24 +106,23 @@ position: relative;
 .contactInfo ul li span {
   color: #fff;
   font-weight: 300;
-
 }
 
 .contactInfo.education {
   margin-bottom: 15px;
 }
 
-.contactInfo.education h5{
+.contactInfo.education h5 {
   color: #03a9f4;
   font-weight: 500;
 }
 
-.contactInfo.education h4:nth-child(2){
+.contactInfo.education h4:nth-child(2) {
   color: #fff;
   font-weight: 500;
 }
 
-.contactInfo.education h4{
+.contactInfo.education h4 {
   color: #fff;
   font-weight: 300;
 }
@@ -145,18 +144,17 @@ position: relative;
   background: #03a9f4;
 }
 
-
 .container .right_Side {
   position: relative;
   background: #fff;
   padding: 40px;
-    }
+}
 
 .about {
   margin-bottom: 50px;
 }
 
-.about:last-child{
+.about:last-child {
   margin-bottom: 0;
 }
 
@@ -168,7 +166,7 @@ position: relative;
 }
 
 .about p {
-  color:#333;
+  color: #333;
 }
 
 .about .box {
@@ -207,7 +205,7 @@ position: relative;
   font-weight: 500;
 }
 
-.skills .box .percent{
+.skills .box .percent {
   position: relative;
   width: 100%;
   height: 10px;
@@ -222,7 +220,7 @@ position: relative;
   background: #03a9f4;
 }
 
-.interests ul{
+.interests ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -234,38 +232,33 @@ position: relative;
   margin: 10px 0;
 }
 
-.interests ul li .fa{
-
+.interests ul li .fa {
   color: #03a9f4;
   font-size: 18px;
   margin-right: 10px;
-  
 }
 
-@media (max-width: 1000px)
-{
+@media (max-width: 1000px) {
   .container {
     margin: 10px;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  .interests ul{
-  grid-template-columns: repeat(2,1fr);
+  .interests ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px)
-{
-  .about .box
-  {
+@media (max-width: 600px) {
+  .about .box {
     flex-direction: column;
   }
-  .about .box .year_company{
+  .about .box .year_company {
     margin-bottom: 5px;
   }
-  .interests ul{
-    grid-template-columns: repeat(1,1fr);
-    }
-  .skills .box{
-    grid-template-columns: 1,1fr;
+  .interests ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .box {
+    grid-template-columns: 1, 1fr;
   }
 }
