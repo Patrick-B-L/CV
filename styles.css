@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-width: 300px;
 }
 
 /* Main container for the CV layout with a grid structure */
