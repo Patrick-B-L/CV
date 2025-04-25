@@ -1,3 +1,6 @@
+# Credits
+This project was created as part of a frontend development course at Lexicon. The project follows and uses the material provided in the tutorial made by "Online Tutorials" at Youtube: https://www.youtube.com/watch?v=hnjHCmaUVPg&list=PLAYfaFuEc_LXvIEz2PaeqrCzJx8Jj-yAj&index=5&t=1949s. Credit to https://www.youtube.com/@OnlineTutorialsYT.
+
 # CV Webpage
 
 This project is a responsive CV webpage designed to showcase personal and professional information in a visually appealing layout. The page is built using HTML and CSS, with a focus on clean design and responsive behavior for different screen sizes.
